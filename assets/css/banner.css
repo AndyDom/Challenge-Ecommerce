@@ -1,0 +1,37 @@
+.banner{
+    align-items:flex-start;
+    height: 20rem; 
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 41.15%, rgba(0, 0, 0, 0.8) 100%), url(/assets/img/hongo.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: flex-end;
+    padding: 3rem 10rem;
+}
+
+.banner__title{
+    color: var(--color-letra-blaco);
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 61px;
+}
+
+.banner__paragraph{
+    color: var(--color-letra-blaco);
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+}
+
+.banner__console{
+    background-color: var(--color-boton);
+    border: none;
+    border-radius: 10px;
+    color: var(--color-letra-blaco);
+    gap: 10px;
+    padding: 16px;
+}
