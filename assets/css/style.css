@@ -4,14 +4,14 @@
     
      --cor-de-fundo: #F5F5F5;
      --cor-de-link: #0F46AC;
-     --color-letra: #464646;
+     --color-letra-gray: #464646;
      --color-letra-green: #004F13;
      --color-letra-blaco: #FFFFFF;
      --color-boton: #004F13;
  }
  
  body {
-     color: var(--color-letra);
+     color: var(--color-letra-green);
      background-image: url(../img/background/winter-g241418102_1920.jpg);
      background-size: cover;
      box-sizing: border-box;
@@ -20,3 +20,15 @@
      padding: 0;
      line-height: 1;
  }
+
+ a{
+    text-decoration: none;
+ }
+
+ #boton{
+    cursor: pointer;
+ }
+
+ #boton:active{
+    transform: scale(1.1);
+}

@@ -23,11 +23,20 @@
     color: var(--color-boton);
 }
 
+.articles__header__verTodo--boton{
+    background: none;
+    border: none;
+    color: var(--color-boton);
+    display: flex;
+    flex-direction: row;
+
+}
+
 .articles__header__verTodo__text{
     font-weight: 700;
     font-size: 16px;
     line-height: 19px;
-    padding-right: 1rem;
+    padding-right: 0.5rem;
 }
 
 .articles__card{
@@ -39,6 +48,7 @@
     grid-template-columns: 100%;
     grid-template-rows: 150px auto;
     margin-right: 1rem;
+    padding-bottom: 0.7rem;
     width: calc(16.8% - 1rem);
 }
 
@@ -76,6 +86,8 @@
 }
 
 .articles__card___see{
+    background: none;
+    border: none;
     color: var(--color-boton);
     display: flex;
     flex-wrap: wrap;
@@ -83,6 +95,7 @@
     font-size: 16px;
     grid-area: card-see;
 }
+
 .articles__contents{
     display: flex;
     flex-wrap: wrap;

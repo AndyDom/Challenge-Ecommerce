@@ -44,7 +44,12 @@
     background-color: #FFFFFF;
     border: 2px solid var(--color-boton);
     border-radius: 10px;
-    color: var(--color-boton);  
+    color: var(--color-boton); 
     gap: 10px;
     padding: 1rem 2.5rem;
+}
+
+.menu__boton{
+    background: none;
+    border: none;
 }

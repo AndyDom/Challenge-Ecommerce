@@ -1,0 +1,11 @@
+footer{
+    color: var(--color-letra-green);
+    font-weight: 1000;
+    padding: 1%;
+    text-align: center;
+}
+
+.foot__link__img{
+    margin-top: 1%;
+    width: 5%;
+}

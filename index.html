@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="assets/css/banner.css">
     <link rel="stylesheet" href="assets/css/articles.css">
     <link rel="stylesheet" href="assets/css/utilities.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
 
 </head>
 <body>
@@ -28,21 +29,25 @@
                 <img class="menu__accion" src="assets/img/VectorSearch.png" alt="Lupa de busqueda">
             </section>
         </header>
-        <button class="menu__login">Login</button>
+        <a href="login.html"><button class="menu__login" id="boton">Login</button></a>
     </section>
 
     <section class="banner">
         <h2 class="banner__title">Diciembre promocional</h2>
         <p class="banner__paragraph">Productos seleccionados con 33% de descuento</p>
-        <button class="banner__console">Ver Consolas</button>
+        <button class="banner__console" id="boton">Ver Consolas</button>
     </section>
     <!-- Articulos de Star Wars -->
     <section class="articles">
         <div class="articles__header">
             <h2 class="articles__header__title">Star Wars</h2>
             <div class="articles__header__verTodo">
-                <h2 class="articles__header__verTodo__text">Ver Todo</h2>
-                <img src="assets/img/Vector-arrow.png" alt="flecha">
+                <a href="allProducts.html">
+                    <button class="articles__header__verTodo--boton" id="boton">
+                        <h2 class="articles__header__verTodo__text">Ver Todo</h2>
+                        <img src="assets/img/Vector-arrow.png" alt="flecha">
+                    </button>
+                </a>
             </div>
         </div>
         <div class="articles__contents">
@@ -52,7 +57,7 @@
                     <div class="articles__card___header">
                         <h5 class="articles__card___title">Stormtroopers</h5>
                         <p class="articles__card___cost">$ 60,00</p>
-                        <p class="articles__card___see">Ver producto</p>
+                        <button class="articles__card___see" id="boton">Ver producto</button>
                     </div>
                 </div>
             </div>
@@ -62,7 +67,7 @@
                     <div class="articles__card___header">
                         <h5 class="articles__card___title">Darth Vader</h5>
                         <p class="articles__card___cost">$60,00</p>
-                        <p class="articles__card___see">Ver producto</p>
+                        <button class="articles__card___see" id="boton">Ver producto</button>
                     </div>
                 </div>
             </div>
@@ -72,7 +77,7 @@
                     <div class="articles__card___header">
                         <h5 class="articles__card___title">Joda</h5>
                         <p class="articles__card___cost">$60,00</p>
-                        <p class="articles__card___see">Ver producto</p>
+                        <button class="articles__card___see" id="boton">Ver producto</button>
                     </div>
                 </div>
             </div>
@@ -82,7 +87,7 @@
                     <div class="articles__card___header">
                         <h5 class="articles__card___title">Stormtroopers</h5>
                         <p class="articles__card___cost">$60,00</p>
-                        <p class="articles__card___see">Ver producto</p>
+                        <button class="articles__card___see" id="boton">Ver producto</button>
                     </div>
                 </div>
             </div>
@@ -92,7 +97,7 @@
                     <div class="articles__card___header">
                         <h5 class="articles__card___title">Baby Joda</h5>
                         <p class="articles__card___cost">$60,00</p>
-                        <p class="articles__card___see">Ver producto</p>
+                        <button class="articles__card___see" id="boton">Ver producto</button>
                     </div>
                 </div>
             </div>
@@ -102,7 +107,7 @@
                     <div class="articles__card___header">
                         <h5 class="articles__card___title">Darth Vader</h5>
                         <p class="articles__card___cost">$60,00</p>
-                        <p class="articles__card___see">Ver producto</p>
+                        <button class="articles__card___see" id="boton">Ver producto</button>
                     </div>
                 </div>
             </div>
@@ -113,8 +118,12 @@
         <div class="articles__header">
             <h2 class="articles__header__title">Consolas</h2>
             <div class="articles__header__verTodo">
-                <h2 class="articles__header__verTodo__text">Ver Todo</h2>
-                <img src="assets/img/Vector-arrow.png" alt="flecha">
+                <a href="allProducts.html">
+                    <button class="articles__header__verTodo--boton" id="boton">
+                        <h2 class="articles__header__verTodo__text">Ver Todo</h2>
+                        <img src="assets/img/Vector-arrow.png" alt="flecha">
+                    </button>
+                </a>
             </div>
         </div>
         <div class="articles__contents">
@@ -124,7 +133,7 @@
                     <div class="articles__card___header">
                         <h5 class="articles__card___title">Joystick Xbox One</h5>
                         <p class="articles__card___cost">$ 60,00</p>
-                        <p class="articles__card___see">Ver producto</p>
+                        <button class="articles__card___see" id="boton">Ver producto</button>
                     </div>
                 </div>
             </div>
@@ -134,7 +143,7 @@
                     <div class="articles__card___header">
                         <h5 class="articles__card___title">PlayStation 5</h5>
                         <p class="articles__card___cost">$60,00</p>
-                        <p class="articles__card___see">Ver producto</p>
+                        <button class="articles__card___see" id="boton">Ver producto</button>
                     </div>
                 </div>
             </div>
@@ -144,7 +153,7 @@
                     <div class="articles__card___header">
                         <h5 class="articles__card___title">Nintendo</h5>
                         <p class="articles__card___cost">$60,00</p>
-                        <p class="articles__card___see">Ver producto</p>
+                        <button class="articles__card___see" id="boton">Ver producto</button>
                     </div>
                 </div>
             </div>
@@ -154,7 +163,7 @@
                     <div class="articles__card___header">
                         <h5 class="articles__card___title">Joystick Swich</h5>
                         <p class="articles__card___cost">$60,00</p>
-                        <p class="articles__card___see">Ver producto</p>
+                        <button class="articles__card___see" id="boton">Ver producto</button>
                     </div>
                 </div>
             </div>
@@ -164,7 +173,7 @@
                     <div class="articles__card___header">
                         <h5 class="articles__card___title">Xbox Serie X</h5>
                         <p class="articles__card___cost">$60,00</p>
-                        <p class="articles__card___see">Ver producto</p>
+                        <button class="articles__card___see" id="boton">Ver producto</button>
                     </div>
                 </div>
             </div>
@@ -174,7 +183,7 @@
                     <div class="articles__card___header">
                         <h5 class="articles__card___title">Game Boy</h5>
                         <p class="articles__card___cost">$60,00</p>
-                        <p class="articles__card___see">Ver producto</p>
+                        <button class="articles__card___see" id="boton">Ver producto</button>
                     </div>
                 </div>
             </div>
@@ -185,8 +194,12 @@
         <div class="articles__header">
             <h2 class="articles__header__title">Diversos</h2>
             <div class="articles__header__verTodo">
-                <h2 class="articles__header__verTodo__text">Ver Todo</h2>
-                <img src="assets/img/Vector-arrow.png" alt="flecha">
+                <a href="allProducts.html">
+                    <button class="articles__header__verTodo--boton" id="boton">
+                        <h2 class="articles__header__verTodo__text">Ver Todo</h2>
+                        <img src="assets/img/Vector-arrow.png" alt="flecha">
+                    </button>
+                </a>
             </div>
         </div>
         <div class="articles__contents">
@@ -196,7 +209,7 @@
                     <div class="articles__card___header">
                         <h5 class="articles__card___title">Camisa Atari</h5>
                         <p class="articles__card___cost">$ 60,00</p>
-                        <p class="articles__card___see">Ver producto</p>
+                        <button class="articles__card___see" id="boton">Ver producto</button>
                     </div>
                 </div>
             </div>
@@ -206,7 +219,7 @@
                     <div class="articles__card___header">
                         <h5 class="articles__card___title">Camisa SNES</h5>
                         <p class="articles__card___cost">$60,00</p>
-                        <p class="articles__card___see">Ver producto</p>
+                        <button class="articles__card___see" id="boton">Ver producto</button>
                     </div>
                 </div>
             </div>
@@ -216,7 +229,7 @@
                     <div class="articles__card___header">
                         <h5 class="articles__card___title">Muñeco Sonic</h5>
                         <p class="articles__card___cost">$60,00</p>
-                        <p class="articles__card___see">Ver producto</p>
+                        <button class="articles__card___see" id="boton">Ver producto</button>
                     </div>
                 </div>
             </div>
@@ -226,7 +239,7 @@
                     <div class="articles__card___header">
                         <h5 class="articles__card___title">Alarma Retro</h5>
                         <p class="articles__card___cost">$60,00</p>
-                        <p class="articles__card___see">Ver producto</p>
+                        <button class="articles__card___see" id="boton">Ver producto</button>
                     </div>
                 </div>
             </div>
@@ -236,7 +249,7 @@
                     <div class="articles__card___header">
                         <h5 class="articles__card___title">VR</h5>
                         <p class="articles__card___cost">$60,00</p>
-                        <p class="articles__card___see">Ver producto</p>
+                        <button class="articles__card___see" id="boton">Ver producto</button>
                     </div>
                 </div>
             </div>
@@ -246,7 +259,7 @@
                     <div class="articles__card___header">
                         <h5 class="articles__card___title">Peluche Pikachu</h5>
                         <p class="articles__card___cost">$60,00</p>
-                        <p class="articles__card___see">Ver producto</p>
+                        <button class="articles__card___see" id="boton">Ver producto</button>
                     </div>
                 </div>
             </div>
@@ -266,13 +279,18 @@
             <h2 class="utilities__contact__title">Hable con nosotros</h2>
             <input class="utilities__contact__name" type="text" placeholder="Nombre">
             <textarea class="utilities__contact__message" cols="70" rows="5" placeholder="Escribe tu mensaje "></textarea>
-            <button class="utilities__contact__send">Enviar mensaje</button>
+            <button class="utilities__contact__send" id="boton">Enviar mensaje</button>
         </div>
     </section>
     
 </body>
-<footer>
-    
+<footer class="foot">
+    <p class="foot__text">Desarrollado por Andres Dominguez</p>
+	<div class="foot__link">
+		<a href="https://www.linkedin.com/in/andres-dominguez-prog07/"><img class="foot__link__img" src="assets/img/linkedin.png" alt="linkedin"></a>
+		<a href="https://github.com/AndyDom"><img class="foot__link__img" src="assets/img/github.png" alt="github"></a>
+				
+	</div>
 </footer>
 
 </html>

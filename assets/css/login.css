@@ -1,0 +1,31 @@
+.login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem;
+}
+
+.login__title{
+    font-weight: 700;
+    font-size: 18px;
+    padding-bottom: 1rem;
+}
+
+.login__input{
+    border: none;
+    margin-bottom: 1rem;
+    padding: 0.7rem 1rem;
+    width: 20%;
+}
+
+.login__input:focus{
+    outline: 2px solid var(--color-letra-green);
+}
+
+.login__enter{
+    background-color: var(--color-letra-green);
+    border: 2px solid var(--color-boton);
+    border-radius: 10px;
+    color: var( --color-letra-blaco);
+    padding: 1rem 9%;
+}
