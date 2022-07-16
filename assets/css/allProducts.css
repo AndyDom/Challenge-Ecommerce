@@ -55,9 +55,32 @@
 
 
 .articles__card___img{
+    display: grid;
     grid-area: card-imagen;
     height: 100%;
     width: 100%;
+}
+
+.articles__card___imgBin{
+    background: none;
+    border: none;
+    display: grid;
+    grid-area: card-imagen;
+    margin-top: 5%;
+    margin-left: 63%;
+    width: 10px;
+    height: 10px;
+}
+
+.articles__card___imgEdit{
+    background: none;
+    border: none;
+    display: grid;
+    grid-area: card-imagen;
+    margin-top: 4%;
+    margin-left: 77%;
+    width: 10px;
+    height: 10px;
 }
 
 .articles__card___base{

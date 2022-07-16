@@ -23,9 +23,17 @@
 }
 
 .login__enter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 22%;
+}
+
+.login__enter--boton{
     background-color: var(--color-letra-green);
     border: 2px solid var(--color-boton);
     border-radius: 10px;
     color: var( --color-letra-blaco);
     padding: 1rem 9%;
+    width: 100%;
 }
