@@ -57,6 +57,9 @@
     border: none;
     border-radius: 10px;
     color: var(--color-letra-blaco);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
     width: 10rem;
     padding: 16px;
 }

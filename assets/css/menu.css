@@ -7,6 +7,11 @@
     padding: 32px 0px;
 }
 
+.menu__beginning{
+    background: none;
+    border: none;
+}
+
 .menu__header{
     align-items: center;
     display: flex;
@@ -44,7 +49,10 @@
     background-color: #FFFFFF;
     border: 2px solid var(--color-boton);
     border-radius: 10px;
-    color: var(--color-boton); 
+    color: var(--color-boton);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px; 
     gap: 10px;
     padding: 1rem 2.5rem;
 }
