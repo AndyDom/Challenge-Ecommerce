@@ -37,3 +37,19 @@
     padding: 1rem 9%;
     width: 100%;
 }
+
+@media screen and (max-width: 768px){
+    .login__input{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 425px){
+    .login__input{
+        width: 100%;
+    }
+
+    .login__enter--boton{
+        width: 300%;
+    }
+}

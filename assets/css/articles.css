@@ -94,10 +94,45 @@
     font-weight: 700;
     font-size: 16px;
     grid-area: card-see;
+    padding: 0;
 }
 
 .articles__contents{
     display: flex;
     flex-wrap: wrap;
     grid-area: contenido;
+}
+
+@media screen and (max-width: 1024px){
+    .articles__card___see{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .articles{
+        margin: 4% 2%;
+    }
+
+    .articles__card{
+        width: calc(25.5% - 1rem);
+    }
+
+    .articles__card:nth-child(5) ,.articles__card:last-child{
+        display: none;
+    }
+
+    .articles__card:nth-child(4){
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 425px){
+    .articles__card{
+        width: calc(51.9% - 1rem);
+    }
+
+    .articles__card:nth-child(2){
+        margin-right: 0;
+    }
 }

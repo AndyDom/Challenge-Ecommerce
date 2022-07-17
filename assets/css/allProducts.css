@@ -122,3 +122,45 @@
     flex-wrap: wrap;
     grid-area: contenido;
 }
+
+@media screen and (max-width: 768px){
+    .articles{
+        margin: 4% 3%;
+    }
+
+    .articles__card{
+        width: calc(25.5% - 1rem);
+    }
+
+    .articles__card:nth-child(6n){
+        margin-right: 1rem;
+    }
+
+    .articles__card:nth-child(4n){
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .articles__card___see{
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 425px){
+    .articles__header{
+        flex-direction: column;
+    }
+
+    .articles__header__title{
+        padding-bottom: 1rem;
+    }
+
+    .articles__card{
+        width: calc(52% - 1rem);
+    }
+    
+    .articles__card:nth-child(2n){
+        margin-right: 0;
+    }
+}

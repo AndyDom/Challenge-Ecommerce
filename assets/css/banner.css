@@ -41,3 +41,25 @@
     margin: 0 10%;
     padding: 16px;
 }
+
+@media screen and (max-width: 425px){
+    .banner{
+        height: 10rem;
+    }
+
+    .banner__title{
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 26px; 
+    }
+
+    .banner__paragraph{
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .banner__console{
+        padding: 8px;
+    }
+}

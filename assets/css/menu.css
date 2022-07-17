@@ -57,7 +57,65 @@
     padding: 1rem 2.5rem;
 }
 
+.menu__boton-sec{
+    background: none;
+    border: none;
+    display: none;
+    width: 8%;
+}
+
+.menu__accion-sec{
+    display: none;
+}
+
 .menu__boton{
     background: none;
     border: none;
+}
+
+@media screen and (max-width: 768px){
+    .menu{
+        margin: 0 2%;
+    }
+
+    .menu__logo{
+        padding-right: 0rem;
+        width: 80%;
+    }
+
+    .menu__search{
+        width: 15rem;
+    }
+}
+
+@media screen and (max-width: 425px){
+    .menu__search{
+        display: none;
+    }
+
+    .menu__header{
+        width: 20%;
+        margin-right: 7%;
+    }
+
+    .menu__boton-sec{
+        display: flex;
+        margin-right: 2%;
+    }
+
+    .menu__accion-sec{
+        display: flex;
+    }
+
+    .menu__logo{
+        width: 400%;
+    }
+
+    .menu__beginning{
+        width: 60%;
+    }
+
+    .menu__search{
+        width: 1rem;
+    }
 }
