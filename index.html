@@ -123,7 +123,7 @@
     <!-- Articulos de Consola -->
     <section class="articles">
         <div class="articles__header">
-            <h2 class="articles__header__title">Consolas</h2>
+            <h2 class="articles__header__title" id="consola">Consolas</h2>
             <div class="articles__header__verTodo">
                 <a href="#">
                     <button class="articles__header__verTodo--boton" id="boton">
@@ -289,22 +289,35 @@
         </div>
         <div class="utilities__contact">
             <h2 class="utilities__contact__title">Hable con nosotros</h2>
-            <input class="utilities__contact__name" type="text" placeholder="Nombre">
-            <textarea class="utilities__contact__message" cols="70" rows="5"
-                placeholder="Escribe tu mensaje "></textarea>
-            <button class="utilities__contact__send" id="boton">Enviar mensaje</button>
+            <form class="form" action="#">
+                <div class="utilities__contact__container">
+                    <input class="utilities__contact__name validar" type="text" placeholder="Nombre" required pattern="[\s\S]{1,40}" data-tipo="name">
+                    <span class="utilities__contact-error"></span>
+                </div>
+                <div class="utilities__contact__container">
+                    <textarea class="utilities__contact__message validar" cols="50" rows="5"
+                    placeholder="Escribe tu mensaje " required data-tipo="message"></textarea>
+                    <span class="utilities__contact-error"></span>
+                </div>
+                <button class="utilities__contact__send" id="boton">Enviar mensaje</button>
+            </form>
         </div>
     </section>
 
-</body>
-<footer class="foot">
-    <p class="foot__text">Desarrollado por Andres Dominguez</p>
-    <div class="foot__link">
-        <a href="https://www.linkedin.com/in/andres-dominguez-prog07/"><img class="foot__link__img"
-                src="assets/img/linkedin.png" alt="linkedin"></a>
-        <a href="https://github.com/AndyDom"><img class="foot__link__img" src="assets/img/github.png" alt="github"></a>
+    <footer class="foot">
+        <p class="foot__text">Desarrollado por Andres Dominguez</p>
+        <div class="foot__link">
+            <a href="https://www.linkedin.com/in/andres-dominguez-prog07/"><img class="foot__link__img"
+                    src="assets/img/linkedin.png" alt="linkedin"></a>
+            <a href="https://github.com/AndyDom"><img class="foot__link__img" src="assets/img/github.png" alt="github"></a>
+    
+        </div>
+    </footer>
 
-    </div>
-</footer>
+    <script src="/controllers/verConsolas.js"></script>
+    <script type="module" src="/controllers/app.js"></script>
+
+</body>
+
 
 </html>

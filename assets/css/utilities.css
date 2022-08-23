@@ -52,19 +52,29 @@
     padding-bottom: 1rem;
 }
 
+.utilities__contact__container{
+    margin-bottom: 1rem;
+}
+
 .utilities__contact__name{
     background: #FFFFFF;
     border: none;
     border-radius: 4px;
     height: 20px;
-    margin-bottom: 1rem;
+    margin-bottom: 6px;
+    width: 100%;
 }
 
 .utilities__contact__message{
     background: #FFFFFF;
     border: none;
     border-radius: 4px;
-    margin-bottom: 1rem;
+    margin-bottom: 6px;
+    width: 100%;
+}
+
+.utilities__contact-error{
+    color: red;
 }
 
 .utilities__contact__send{
