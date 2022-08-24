@@ -1,19 +1,23 @@
 {
-    "perfil": [
-      {
-        "nombre": "hola",
-        "email": "Christian@alura.com",
-        "id": "b3ad652a-ad98-41fc-8b85-ca2ae5fb3cb4"
-      },
-      {
-        "nombre": "es",
-        "email": "andres@alura.com",
-        "id": "61c2d282-700b-4e57-8265-ee5989a96d44"
-      },
-      {
-        "nombre": "Pedro",
-        "email": "pedro@alura.com",
-        "id": "2bb4ee95-dd04-4790-92fd-a914261adc0e"
-      }
-    ]
+    "name": "admin",
+    "version": "1.0.0",
+    "description": "Challenge-Ecommerce",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/AndyDom/Challenge-Ecommerce"
+    },
+    "keywords": [
+      "Alura"
+    ],
+    "author": "Dominguez Andres",
+    "license": "ISC",
+    "bugs": {
+      "url": "https://github.com/AndyDom/Challenge-Ecommerce/issues"
+    },
+    "homepage": "https://github.com/AndyDom/Challenge-Ecommerce#readme"
   }
+  

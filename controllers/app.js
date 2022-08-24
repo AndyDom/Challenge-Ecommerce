@@ -1,4 +1,4 @@
-import { valida } from "./validacionesContacto.js";
+import { valida, validarLogin } from "./validaciones.js";
 
 const dates = document.querySelectorAll(".validar");
 
@@ -7,3 +7,5 @@ dates.forEach(date => {
         valida(date.target);
     });
 });
+
+validarLogin();

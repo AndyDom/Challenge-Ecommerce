@@ -53,6 +53,9 @@
 }
 
 .utilities__contact__container{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
     margin-bottom: 1rem;
 }
 
@@ -73,8 +76,10 @@
     width: 100%;
 }
 
-.utilities__contact-error{
-    color: red;
+.validation-error{
+    text-align: center;
+    color: #D10A0A;
+    width: 500px;
 }
 
 .utilities__contact__send{

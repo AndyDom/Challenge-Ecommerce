@@ -1,0 +1,19 @@
+{
+    "perfil": [
+      {
+        "user": "admin@prueba.com",
+        "password": "Admin123",
+        "id": "1"
+      },
+      {
+        "nombre": "asdfsds",
+        "email": "andres@alura.com",
+        "id": "61c2d282-700b-4e57-8265-ee5989a96d44"
+      },
+      {
+        "nombre": "sadf",
+        "email": "pedro@alura.com",
+        "id": "2bb4ee95-dd04-4790-92fd-a914261adc0e"
+      }
+    ]
+  }

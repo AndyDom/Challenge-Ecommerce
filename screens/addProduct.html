@@ -10,13 +10,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!-- Fuente del Proyecto Raleway -->
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
-    <title> Login - Kobat Shop</title>
+    <title> Administrador - Kobat Shop</title>
     <!-- Referencia de la hoja de estilo de Css -->
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/menu.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/menu.css">
     <link rel="stylesheet" href="assets/css/utilities.css">
     <link rel="stylesheet" href="assets/css/footer.css">
-    <link rel="stylesheet" href="assets/css/login.css">
+    <link rel="stylesheet" href="assets/css/addProduct.css">
 
 </head>
 
@@ -30,17 +30,36 @@
             </a>
             <section class="menu__search">
                 <input class="menu__text" type="search" placeholder="¿Que deseas buscar?">
-                <button class="menu__boton" id="boton"><img class="menu__accion" src="assets/img/VectorSearch.png" alt="Lupa de busqueda"></button>
+                <button class="menu__boton" id="boton"><img class="menu__accion" src="assets/img/VectorSearch.png"
+                        alt="Lupa de busqueda"></button>
             </section>
         </header>
+        <a href="login.html"><button class="menu__admin" id="boton">Menu Administrador</button></a>
         <button class="menu__boton-sec" id="boton"><img class="menu__accion-sec" src="assets/img/VectorSearchBlack.png" alt="Lupa de busqueda"></button>
     </section>
 
-    <section class="login">
-        <p class="login__title">Iniciar Sesión</p>
-        <input type="text" class="login__input" placeholder="Escriba su correo electrónico">
-        <input type="text" class="login__input" placeholder="Escriba su contraseña">
-        <a class="login__enter" href="allProducts.html"><button class="login__enter--boton" id="boton">Entrar</button></a>
+    <section class="add">
+        <div class="add__data">
+            <label for="" class="add__data_title">URL de Imagen</label>
+            <input type="text" class="add_data_text">
+        </div>
+        <div class="add__data">
+            <label for="" class="add__data_title">Categoria</label>
+            <input type="text" class="add_data_text">
+        </div>
+        <div class="add__data">
+            <label for="" class="add__data_title">Nombre del producto</label>
+            <input type="text" class="add_data_text">
+        </div>
+        <div class="add__data">
+            <label for="" class="add__data_title">Precio del producto</label>
+            <input type="text" class="add_data_text">
+        </div>
+        <div class="add__description">
+            <label for="" class="add__description_title">Precio del producto</label>
+            <textarea name="descripcion" class="add__description_text" cols="30" rows="3"></textarea>
+        </div>
+        <button class="add_button" id="boton">Agregar producto</button>
     </section>
 
     <section class="utilities">
@@ -58,7 +77,8 @@
         <div class="utilities__contact">
             <h2 class="utilities__contact__title">Hable con nosotros</h2>
             <input class="utilities__contact__name" type="text" placeholder="Nombre">
-            <textarea class="utilities__contact__message" cols="70" rows="5" placeholder="Escribe tu mensaje "></textarea>
+            <textarea class="utilities__contact__message" cols="70" rows="5"
+                placeholder="Escribe tu mensaje "></textarea>
             <button class="utilities__contact__send" id="boton">Enviar mensaje</button>
         </div>
     </section>

@@ -2,7 +2,7 @@
 <html lang="es">
 
 <head>
-    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="../assets/css/reset.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,14 +10,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!-- Fuente del Proyecto Raleway -->
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
-    <title> Kobat Shop</title>
+    <title> Productos - Kobat Shop</title>
     <!-- Referencia de la hoja de estilo de Css -->
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/menu.css">
-    <link rel="stylesheet" href="assets/css/banner.css">
-    <link rel="stylesheet" href="assets/css/articles.css">
-    <link rel="stylesheet" href="assets/css/utilities.css">
-    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/menu.css">
+    <link rel="stylesheet" href="../assets/css/utilities.css">
+    <link rel="stylesheet" href="../assets/css/footer.css">
+    <link rel="stylesheet" href="../assets/css/allProducts.css">
 
 </head>
 
@@ -26,39 +25,34 @@
         <header class="menu__header">
             <a href="index.html">
                 <button class="menu__beginning" id="boton">
-                    <img class="menu__logo" src="assets/img/Logo.png" alt="Logo Kobat">
+                    <img class="menu__logo" src="../assets/img/Logo.png" alt="Logo Kobat">
                 </button>
             </a>
             <section class="menu__search">
                 <input class="menu__text" type="search" placeholder="¿Que deseas buscar?">
-                <button class="menu__boton" id="boton"><img class="menu__accion" src="assets/img/VectorSearch.png" alt="Lupa de busqueda"></button>
+                <button class="menu__boton" id="boton"><img class="menu__accion" src="../assets/img/VectorSearch.png"
+                        alt="Lupa de busqueda"></button>
             </section>
         </header>
-        <a href="login.html"><button class="menu__login" id="boton">Login</button></a>
-        <button class="menu__boton-sec" id="boton"><img class="menu__accion-sec" src="assets/img/VectorSearchBlack.png" alt="Lupa de busqueda"></button>
+        <button class="menu__boton-sec" id="boton"><img class="menu__accion-sec" src="../assets/img/VectorSearchBlack.png" alt="Lupa de busqueda"></button>
     </section>
 
-    <section class="banner">
-        <h2 class="banner__title">Diciembre promocional</h2>
-        <p class="banner__paragraph">Productos seleccionados con 33% de descuento</p>
-        <button class="banner__console" id="boton">Ver Consolas</button>
-    </section>
-    <!-- Articulos de Star Wars -->
     <section class="articles">
         <div class="articles__header">
-            <h2 class="articles__header__title">Star Wars</h2>
+            <h2 class="articles__header__title">Todos los productos</h2>
             <div class="articles__header__verTodo">
-                <a href="#">
+                <a href="addProduct.html">
                     <button class="articles__header__verTodo--boton" id="boton">
-                        <h2 class="articles__header__verTodo__text">Ver Todo</h2>
-                        <img src="assets/img/Vector-arrow.png" alt="flecha">
+                        Agregar producto
                     </button>
                 </a>
             </div>
         </div>
         <div class="articles__contents">
             <div class="articles__card">
-                <img class="articles__card___img" src="assets/img/starWars/mate.png" alt="mate de stormtroopers">
+                <img class="articles__card___img" src="../assets/img/starWars/mate.png" alt="mate de stormtroopers">
+                <button class="articles__card___imgBin" id="boton"><img src="../assets/img/VectorBin.png" alt="desechar"></button>
+                <button class="articles__card___imgEdit" id="boton"><img src="../assets/img/VectorEdit.png" alt="editar"></button>
                 <div class="articles__card___base">
                     <div class="articles__card___header">
                         <h5 class="articles__card___title">Stormtroopers</h5>
@@ -68,7 +62,9 @@
                 </div>
             </div>
             <div class="articles__card">
-                <img class="articles__card___img" src="assets/img/starWars/headDark.png" alt="cabeza de Darth Vader">
+                <img class="articles__card___img" src="../assets/img/starWars/headDark.png" alt="cabeza de Darth Vader">
+                <button class="articles__card___imgBin" id="boton"><img src="../assets/img/VectorBin.png" alt="desechar"></button>
+                <button class="articles__card___imgEdit" id="boton"><img src="../assets/img/VectorEdit.png" alt="editar"></button>
                 <div class="articles__card___base">
                     <div class="articles__card___header">
                         <h5 class="articles__card___title">Darth Vader</h5>
@@ -78,7 +74,9 @@
                 </div>
             </div>
             <div class="articles__card">
-                <img class="articles__card___img" src="assets/img/starWars/joda.png" alt="joda">
+                <img class="articles__card___img" src="../assets/img/starWars/joda.png" alt="joda">
+                <button class="articles__card___imgBin" id="boton"><img src="../assets/img/VectorBin.png" alt="desechar"></button>
+                <button class="articles__card___imgEdit" id="boton"><img src="../assets/img/VectorEdit.png" alt="editar"></button>
                 <div class="articles__card___base">
                     <div class="articles__card___header">
                         <h5 class="articles__card___title">Joda</h5>
@@ -88,7 +86,9 @@
                 </div>
             </div>
             <div class="articles__card">
-                <img class="articles__card___img" src="assets/img/starWars/stormtroopers.png" alt="stormtroopers">
+                <img class="articles__card___img" src="../assets/img/starWars/stormtroopers.png" alt="stormtroopers">
+                <button class="articles__card___imgBin" id="boton"><img src="../assets/img/VectorBin.png" alt="desechar"></button>
+                <button class="articles__card___imgEdit" id="boton"><img src="../assets/img/VectorEdit.png" alt="editar"></button>
                 <div class="articles__card___base">
                     <div class="articles__card___header">
                         <h5 class="articles__card___title">Stormtroopers</h5>
@@ -98,7 +98,9 @@
                 </div>
             </div>
             <div class="articles__card">
-                <img class="articles__card___img" src="assets/img/starWars/babyjoda.png" alt="babyjoda">
+                <img class="articles__card___img" src="../assets/img/starWars/babyjoda.png" alt="babyjoda">
+                <button class="articles__card___imgBin" id="boton"><img src="../assets/img/VectorBin.png" alt="desechar"></button>
+                <button class="articles__card___imgEdit" id="boton"><img src="../assets/img/VectorEdit.png" alt="editar"></button>
                 <div class="articles__card___base">
                     <div class="articles__card___header">
                         <h5 class="articles__card___title">Baby Joda</h5>
@@ -108,7 +110,9 @@
                 </div>
             </div>
             <div class="articles__card">
-                <img class="articles__card___img" src="assets/img/starWars/DarthVader.png" alt="DarthVader">
+                <img class="articles__card___img" src="../assets/img/starWars/DarthVader.png" alt="DarthVader">
+                <button class="articles__card___imgBin" id="boton"><img src="../assets/img/VectorBin.png" alt="desechar"></button>
+                <button class="articles__card___imgEdit" id="boton"><img src="../assets/img/VectorEdit.png" alt="editar"></button>
                 <div class="articles__card___base">
                     <div class="articles__card___header">
                         <h5 class="articles__card___title">Darth Vader</h5>
@@ -117,25 +121,11 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- Articulos de Consola -->
-    <section class="articles">
-        <div class="articles__header">
-            <h2 class="articles__header__title" id="consola">Consolas</h2>
-            <div class="articles__header__verTodo">
-                <a href="#">
-                    <button class="articles__header__verTodo--boton" id="boton">
-                        <h2 class="articles__header__verTodo__text">Ver Todo</h2>
-                        <img src="assets/img/Vector-arrow.png" alt="flecha">
-                    </button>
-                </a>
-            </div>
-        </div>
-        <div class="articles__contents">
             <div class="articles__card">
-                <img class="articles__card___img" src="assets/img/Consolas/joystick.png" alt="Joystick de Xbox">
+                <img class="articles__card___img" src="../assets/img/Consolas/joystick.png" alt="Joystick de Xbox">
+                <button class="articles__card___imgBin" id="boton"><img src="../assets/img/VectorBin.png" alt="desechar"></button>
+                <button class="articles__card___imgEdit" id="boton"><img src="../assets/img/VectorEdit.png" alt="editar"></button>
                 <div class="articles__card___base">
                     <div class="articles__card___header">
                         <h5 class="articles__card___title">Joystick Xbox One</h5>
@@ -145,8 +135,9 @@
                 </div>
             </div>
             <div class="articles__card">
-                <img class="articles__card___img" src="assets/img/Consolas/consoleandjoystick.png"
-                    alt="Play Station 5 y joystick">
+                <img class="articles__card___img" src="../assets/img/Consolas/consoleandjoystick.png" alt="Play Station 5 y joystick">
+                <button class="articles__card___imgBin" id="boton"><img src="../assets/img/VectorBin.png" alt="desechar"></button>
+                <button class="articles__card___imgEdit" id="boton"><img src="../assets/img/VectorEdit.png" alt="editar"></button>
                 <div class="articles__card___base">
                     <div class="articles__card___header">
                         <h5 class="articles__card___title">PlayStation 5</h5>
@@ -156,7 +147,9 @@
                 </div>
             </div>
             <div class="articles__card">
-                <img class="articles__card___img" src="assets/img/Consolas/console.png" alt="Nintendo">
+                <img class="articles__card___img" src="../assets/img/Consolas/console.png" alt="Nintendo">
+                <button class="articles__card___imgBin" id="boton"><img src="../assets/img/VectorBin.png" alt="desechar"></button>
+                <button class="articles__card___imgEdit" id="boton"><img src="../assets/img/VectorEdit.png" alt="editar"></button>
                 <div class="articles__card___base">
                     <div class="articles__card___header">
                         <h5 class="articles__card___title">Nintendo</h5>
@@ -166,7 +159,9 @@
                 </div>
             </div>
             <div class="articles__card">
-                <img class="articles__card___img" src="assets/img/Consolas/swish.png" alt="Joystick Swich">
+                <img class="articles__card___img" src="../assets/img/Consolas/swish.png" alt="Joystick Swich">
+                <button class="articles__card___imgBin" id="boton"><img src="../assets/img/VectorBin.png" alt="desechar"></button>
+                <button class="articles__card___imgEdit" id="boton"><img src="../assets/img/VectorEdit.png" alt="editar"></button>
                 <div class="articles__card___base">
                     <div class="articles__card___header">
                         <h5 class="articles__card___title">Joystick Swich</h5>
@@ -176,7 +171,9 @@
                 </div>
             </div>
             <div class="articles__card">
-                <img class="articles__card___img" src="assets/img/Consolas/xbox.png" alt="Xbox Serie X">
+                <img class="articles__card___img" src="../assets/img/Consolas/xbox.png" alt="Xbox Serie X">
+                <button class="articles__card___imgBin" id="boton"><img src="../assets/img/VectorBin.png" alt="desechar"></button>
+                <button class="articles__card___imgEdit" id="boton"><img src="../assets/img/VectorEdit.png" alt="editar"></button>
                 <div class="articles__card___base">
                     <div class="articles__card___header">
                         <h5 class="articles__card___title">Xbox Serie X</h5>
@@ -186,7 +183,9 @@
                 </div>
             </div>
             <div class="articles__card">
-                <img class="articles__card___img" src="assets/img/Consolas/game.png" alt="GameBoy">
+                <img class="articles__card___img" src="../assets/img/Consolas/game.png" alt="GameBoy">
+                <button class="articles__card___imgBin" id="boton"><img src="../assets/img/VectorBin.png" alt="desechar"></button>
+                <button class="articles__card___imgEdit" id="boton"><img src="../assets/img/VectorEdit.png" alt="editar"></button>
                 <div class="articles__card___base">
                     <div class="articles__card___header">
                         <h5 class="articles__card___title">Game Boy</h5>
@@ -195,25 +194,10 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Articulos de Diversos -->
-    <section class="articles">
-        <div class="articles__header">
-            <h2 class="articles__header__title">Diversos</h2>
-            <div class="articles__header__verTodo">
-                <a href="#">
-                    <button class="articles__header__verTodo--boton" id="boton">
-                        <h2 class="articles__header__verTodo__text">Ver Todo</h2>
-                        <img src="assets/img/Vector-arrow.png" alt="flecha">
-                    </button>
-                </a>
-            </div>
-        </div>
-        <div class="articles__contents">
             <div class="articles__card">
-                <img class="articles__card___img" src="assets/img/Diversos/tshirtAtari.png" alt="Camisa Atari">
+                <img class="articles__card___img" src="../assets/img/Diversos/tshirtAtari.png" alt="Camisa Atari">
+                <button class="articles__card___imgBin" id="boton"><img src="../assets/img/VectorBin.png" alt="desechar"></button>
+                <button class="articles__card___imgEdit" id="boton"><img src="../assets/img/VectorEdit.png" alt="editar"></button>
                 <div class="articles__card___base">
                     <div class="articles__card___header">
                         <h5 class="articles__card___title">Camisa Atari</h5>
@@ -223,7 +207,9 @@
                 </div>
             </div>
             <div class="articles__card">
-                <img class="articles__card___img" src="assets/img/Diversos/yshirtNes.png" alt="Camisa SNES">
+                <img class="articles__card___img" src="../assets/img/Diversos/yshirtNes.png" alt="Camisa SNES">
+                <button class="articles__card___imgBin" id="boton"><img src="../assets/img/VectorBin.png" alt="desechar"></button>
+                <button class="articles__card___imgEdit" id="boton"><img src="../assets/img/VectorEdit.png" alt="editar"></button>
                 <div class="articles__card___base">
                     <div class="articles__card___header">
                         <h5 class="articles__card___title">Camisa SNES</h5>
@@ -233,7 +219,9 @@
                 </div>
             </div>
             <div class="articles__card">
-                <img class="articles__card___img" src="assets/img/Diversos/dollSonic.png" alt="Muñeco de sony">
+                <img class="articles__card___img" src="../assets/img/Diversos/dollSonic.png" alt="Muñeco de sony">
+                <button class="articles__card___imgBin" id="boton"><img src="../assets/img/VectorBin.png" alt="desechar"></button>
+                <button class="articles__card___imgEdit" id="boton"><img src="../assets/img/VectorEdit.png" alt="editar"></button>
                 <div class="articles__card___base">
                     <div class="articles__card___header">
                         <h5 class="articles__card___title">Muñeco Sonic</h5>
@@ -243,7 +231,9 @@
                 </div>
             </div>
             <div class="articles__card">
-                <img class="articles__card___img" src="assets/img/Diversos/retroAlarm.png" alt="Alarma Retro">
+                <img class="articles__card___img" src="../assets/img/Diversos/retroAlarm.png" alt="Alarma Retro">
+                <button class="articles__card___imgBin" id="boton"><img src="../assets/img/VectorBin.png" alt="desechar"></button>
+                <button class="articles__card___imgEdit" id="boton"><img src="../assets/img/VectorEdit.png" alt="editar"></button>
                 <div class="articles__card___base">
                     <div class="articles__card___header">
                         <h5 class="articles__card___title">Alarma Retro</h5>
@@ -253,7 +243,9 @@
                 </div>
             </div>
             <div class="articles__card">
-                <img class="articles__card___img" src="assets/img/Diversos/vr.png" alt="VR">
+                <img class="articles__card___img" src="../assets/img/Diversos/vr.png" alt="VR">
+                <button class="articles__card___imgBin" id="boton"><img src="../assets/img/VectorBin.png" alt="desechar"></button>
+                <button class="articles__card___imgEdit" id="boton"><img src="../assets/img/VectorEdit.png" alt="editar"></button>
                 <div class="articles__card___base">
                     <div class="articles__card___header">
                         <h5 class="articles__card___title">VR</h5>
@@ -263,7 +255,9 @@
                 </div>
             </div>
             <div class="articles__card">
-                <img class="articles__card___img" src="assets/img/Diversos/teddyPikachu.png" alt="Peluche Pikachu">
+                <img class="articles__card___img" src="../assets/img/Diversos/teddyPikachu.png" alt="Peluche Pikachu">
+                <button class="articles__card___imgBin" id="boton"><img src="../assets/img/VectorBin.png" alt="desechar"></button>
+                <button class="articles__card___imgEdit" id="boton"><img src="../assets/img/VectorEdit.png" alt="editar"></button>
                 <div class="articles__card___base">
                     <div class="articles__card___header">
                         <h5 class="articles__card___title">Peluche Pikachu</h5>
@@ -275,9 +269,10 @@
         </div>
     </section>
 
+
     <section class="utilities">
         <div class="utilities__data">
-            <img class="utilities__logo" src="assets/img/Logo.png" alt="Alura Geek">
+            <img class="utilities__logo" src="../assets/img/Logo.png" alt="Alura Geek">
             <div class="utilities__info">
                 <h2 class="utilities__info__text">Quienes somos</h2>
                 <h2 class="utilities__info__text">Política de privacidad</h2>
@@ -289,35 +284,22 @@
         </div>
         <div class="utilities__contact">
             <h2 class="utilities__contact__title">Hable con nosotros</h2>
-            <form class="form" action="#">
-                <div class="utilities__contact__container">
-                    <input class="utilities__contact__name validar" type="text" placeholder="Nombre" required pattern="[\s\S]{1,40}" data-tipo="name">
-                    <span class="utilities__contact-error"></span>
-                </div>
-                <div class="utilities__contact__container">
-                    <textarea class="utilities__contact__message validar" cols="50" rows="5"
-                    placeholder="Escribe tu mensaje " required data-tipo="message"></textarea>
-                    <span class="utilities__contact-error"></span>
-                </div>
-                <button class="utilities__contact__send" id="boton">Enviar mensaje</button>
-            </form>
+            <input class="utilities__contact__name" type="text" placeholder="Nombre">
+            <textarea class="utilities__contact__message" cols="70" rows="5"
+                placeholder="Escribe tu mensaje "></textarea>
+            <button class="utilities__contact__send" id="boton">Enviar mensaje</button>
         </div>
     </section>
 
-    <footer class="foot">
-        <p class="foot__text">Desarrollado por Andres Dominguez</p>
-        <div class="foot__link">
-            <a href="https://www.linkedin.com/in/andres-dominguez-prog07/"><img class="foot__link__img"
-                    src="assets/img/linkedin.png" alt="linkedin"></a>
-            <a href="https://github.com/AndyDom"><img class="foot__link__img" src="assets/img/github.png" alt="github"></a>
-    
-        </div>
-    </footer>
-
-    <script src="/controllers/verConsolas.js"></script>
-    <script type="module" src="/controllers/app.js"></script>
-
 </body>
+<footer class="foot">
+    <p class="foot__text">Desarrollado por Andres Dominguez</p>
+    <div class="foot__link">
+        <a href="https://www.linkedin.com/in/andres-dominguez-prog07/"><img class="foot__link__img"
+                src="../assets/img/linkedin.png" alt="linkedin"></a>
+        <a href="https://github.com/AndyDom"><img class="foot__link__img" src="../assets/img/github.png" alt="github"></a>
 
+    </div>
+</footer>
 
 </html>
