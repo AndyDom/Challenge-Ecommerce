@@ -12,6 +12,7 @@
 
 .add{
     align-items: center;
+    text-align: left;
     display: flex;
     flex-direction: column;
     padding: 4rem;
@@ -22,6 +23,7 @@
     background: var(--background-white);
     display: flex;
     flex-direction: column;
+    flex-wrap:wrap;
     margin-bottom: 1rem;
     width: 30%;
     padding: 0.5rem;
@@ -31,6 +33,11 @@
     font-weight: 400;
     font-size: 12px;
     line-height: 16px;
+}
+
+.add_data_text{
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .add_data_text, .add__description_text{

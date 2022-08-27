@@ -2,6 +2,7 @@ import { productServices } from "../service/product-service.js";
 
 export function valida(date){
     const dateType = date.dataset.tipo;
+    console.log(dateType)
 
     if (date.validity.valid && (date.value.length <= 120)) {
         date.parentElement.querySelector(".validation-error").innerHTML = "";
@@ -32,7 +33,22 @@ const ErrorMessage = {
     password: {
         valueMissing: "El campo contraseña no puede estar vacío",
         patternMismatch: "Al menos 6 caracteres, maximo 12, debe contener una letra minúscula, una letra mayúscula, un número y no puede contener caracteres especiales.",
-    },  
+    },
+    category:{
+        valueMissing: "El campo categoria no puede estar vacío",
+        patternMismatch: "Se excedió el número de caracteres, máximo 20.",
+    },
+    nameProduct:{
+        valueMissing: "El campo categoria no puede estar vacío",
+        patternMismatch: "Se excedió el número de caracteres, máximo 20.",
+    },
+    price:{
+        valueMissing: "El campo categoria no puede estar vacío",
+    },
+    description:{
+        valueMissing: "El campo categoria no puede estar vacío",
+        patternMismatch: "Se excedió el número de caracteres, máximo 150.",
+    },   
 }
 
 function mostrarMensajeDeError(dateType, date) {
@@ -42,6 +58,9 @@ function mostrarMensajeDeError(dateType, date) {
             mensaje = ErrorMessage[dateType][error];
         }
         if (date.value.length > 120 && dateType == "message") {
+            mensaje = ErrorMessage[dateType]["patternMismatch"];
+        }
+        if (date.value.length > 150 && dateType == "description") {
             mensaje = ErrorMessage[dateType]["patternMismatch"];
         }
 

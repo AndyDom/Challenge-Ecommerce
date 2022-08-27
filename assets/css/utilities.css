@@ -79,7 +79,7 @@
 .validation-error{
     text-align: center;
     color: #D10A0A;
-    width: 500px;
+    width: 100%;
 }
 
 .utilities__contact__send{

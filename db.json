@@ -1,19 +1,33 @@
 {
-    "perfil": [
-      {
-        "user": "admin@prueba.com",
-        "password": "Admin123",
-        "id": "1"
-      },
-      {
-        "nombre": "asdfsds",
-        "email": "andres@alura.com",
-        "id": "61c2d282-700b-4e57-8265-ee5989a96d44"
-      },
-      {
-        "nombre": "sadf",
-        "email": "pedro@alura.com",
-        "id": "2bb4ee95-dd04-4790-92fd-a914261adc0e"
-      }
-    ]
-  }
+  "perfil": [
+    {
+      "user": "admin@prueba.com",
+      "password": "Admin123",
+      "id": "1"
+    },
+    {
+      "name": "Producto XYZ",
+      "image": "https://i.blogs.es/1da08b/1366_2000-9-/1366_2000.jpeg",
+      "price": "10",
+      "id": 2,
+      "category": "Star Wars",
+      "description": "hola"
+    },
+    {
+      "name": "Swich",
+      "image": "https://s3.us-east-2.amazonaws.com/ccp-prd-s3-uploads/2019/3/12/155c4cd3a00d8414e67f8039bf39d0247108f6ee.jpeg",
+      "price": "123",
+      "id": "c7690f9b-132b-49a8-8936-39b506c4d447",
+      "category": "Consolas",
+      "description": "sdafsadf"
+    },
+    {
+      "name": "qwe",
+      "image": "https://http2.mlstatic.com/D_NQ_NP_880905-MLA43486597537_092020-O.jpg",
+      "price": "234",
+      "id": "f11a19ac-7675-4c31-84aa-dd7cdac2d355",
+      "category": "Diversos",
+      "description": "sdfsdfasdf"
+    }
+  ]
+}

@@ -44,7 +44,7 @@
         <button class="banner__console" id="boton">Ver Consolas</button>
     </section>
     <!-- Articulos de Star Wars -->
-    <section class="articles">
+    <section class="articles" >
         <div class="articles__header">
             <h2 class="articles__header__title">Star Wars</h2>
             <div class="articles__header__verTodo">
@@ -56,8 +56,8 @@
                 </a>
             </div>
         </div>
-        <div class="articles__contents">
-            <div class="articles__card">
+        <div class="articles__contents" data-starWars>
+            <!-- <div class="articles__card">
                 <img class="articles__card___img" src="../assets/img/starWars/mate.png" alt="mate de stormtroopers">
                 <div class="articles__card___base">
                     <div class="articles__card___header">
@@ -116,7 +116,7 @@
                         <button class="articles__card___see" id="boton">Ver producto</button>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </section>
 
@@ -133,7 +133,7 @@
                 </a>
             </div>
         </div>
-        <div class="articles__contents">
+        <div class="articles__contents" data-consola>
             <div class="articles__card">
                 <img class="articles__card___img" src="../assets/img/Consolas/joystick.png" alt="Joystick de Xbox">
                 <div class="articles__card___base">
@@ -211,7 +211,7 @@
                 </a>
             </div>
         </div>
-        <div class="articles__contents">
+        <div class="articles__contents" data-diversos>
             <div class="articles__card">
                 <img class="articles__card___img" src="../assets/img/Diversos/tshirtAtari.png" alt="Camisa Atari">
                 <div class="articles__card___base">
@@ -292,12 +292,12 @@
             <form class="form" action="#">
                 <div class="utilities__contact__container">
                     <input class="utilities__contact__name validar" type="text" placeholder="Nombre" required pattern="[\s\S]{1,40}" data-tipo="name">
-                    <span class="utilities__contact-error"></span>
+                    <span class="validation-error"></span>
                 </div>
                 <div class="utilities__contact__container">
                     <textarea class="utilities__contact__message validar" cols="50" rows="5"
                     placeholder="Escribe tu mensaje " required data-tipo="message"></textarea>
-                    <span class="utilities__contact-error"></span>
+                    <span class="validation-error"></span>
                 </div>
                 <button class="utilities__contact__send" id="boton">Enviar mensaje</button>
             </form>
@@ -316,6 +316,7 @@
 
     <script src="/controllers/verConsolas.js"></script>
     <script type="module" src="/controllers/app.js"></script>
+    <script type="module" src="/controllers/productosControllers.js"></script>
 
 </body>
 
