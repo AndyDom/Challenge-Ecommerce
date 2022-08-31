@@ -47,7 +47,7 @@ const ErrorMessage = {
     },
     description:{
         valueMissing: "El campo categoria no puede estar vacío",
-        patternMismatch: "Se excedió el número de caracteres, máximo 150.",
+        patternMismatch: "Se excedió el número de caracteres, máximo 300.",
     },   
 }
 
@@ -60,8 +60,9 @@ function mostrarMensajeDeError(dateType, date) {
         if (date.value.length > 120 && dateType == "message") {
             mensaje = ErrorMessage[dateType]["patternMismatch"];
         }
-        if (date.value.length > 150 && dateType == "description") {
+        if (date.value.length > 300 && dateType == "description") {
             mensaje = ErrorMessage[dateType]["patternMismatch"];
+            console.log(date.value.length)
         }
 
     });

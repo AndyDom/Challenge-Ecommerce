@@ -61,13 +61,21 @@
     width: 100%;
 }
 
+.edit{
+    width: 25px;
+}
+
+.bin{
+    width: 18px;
+}
+
 .articles__card___imgBin{
     background: none;
     border: none;
     display: grid;
     grid-area: card-imagen;
-    margin-top: 5%;
-    margin-left: 63%;
+    margin-top: -0.8rem;
+    margin-left: 6rem;
     width: 10px;
     height: 10px;
 }
@@ -77,10 +85,10 @@
     border: none;
     display: grid;
     grid-area: card-imagen;
-    margin-top: 4%;
-    margin-left: 77%;
-    width: 10px;
-    height: 10px;
+    margin-top: -3rem;
+    margin-left: 8rem;
+    width: 30px;
+    height: 15px;
 }
 
 .articles__card___base{
@@ -139,11 +147,27 @@
     .articles__card:nth-child(4n){
         margin-right: 0;
     }
+    .articles__card___imgEdit{
+        margin-top: -3rem;
+        margin-left: 7.6rem;
+    }
+    .articles__card___imgBin{
+        margin-top: -0.8rem;
+        margin-left: 5.5rem;
+    }
 }
 
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1024px)and (min-width: 800px){
     .articles__card___see{
         font-size: 13px;
+    }
+    .articles__card___imgEdit{
+        margin-top: -3rem;
+        margin-left: 5rem;
+    }
+    .articles__card___imgBin{
+        margin-top: -0.8rem;
+        margin-left: 3.3rem;
     }
 }
 

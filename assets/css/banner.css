@@ -1,7 +1,7 @@
 .banner{
     align-items:flex-start;
     height: 20rem; 
-    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 41.15%, rgba(0, 0, 0, 0.8) 100%), url(../img/hongo.jpg);
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 41.15%, rgba(0, 0, 0, 0.8) 100%), url(../img/banner-funko.jpg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     display: flex;
