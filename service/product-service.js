@@ -27,24 +27,24 @@ const createProduct = (name,image,price,category,description) => {
 
 
 
-const eliminarCliente = (id) => {
+const deleteProduct = (id) => {
   return fetch(`http://localhost:3000/perfil/${id}`, {
     method: "DELETE",
   });
 };
 
-const detalleCliente = (id) => {
+const detailCliente = (id) => {
   return fetch(`http://localhost:3000/perfil/${id}`).then((respuesta) => respuesta.json()
   );
 };
 
-const actualizarCliente = (nombre,email,id) =>{
+const upgradeProduct = (name,image,price,category,description,id) =>{
   return fetch(`http://localhost:3000/perfil/${id}`, {
     method: "PUT",
     headers: {
       "Content-Type": "application/json"
     },
-    body: JSON.stringify({nombre,email})
+    body: JSON.stringify({name,image,price,category,description})
   })
   .then( (respuesta) => respuesta)
   .catch((err) => console.log(err));
@@ -53,7 +53,7 @@ const actualizarCliente = (nombre,email,id) =>{
 export const productServices = {
   datas,
   createProduct,
-  eliminarCliente,
-  detalleCliente,
-  actualizarCliente,
+  deleteProduct,
+  detailCliente,
+  upgradeProduct,
 };

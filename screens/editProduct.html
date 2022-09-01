@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <link rel="stylesheet" href="../assets/css/reset.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Fuente del Proyecto Raleway -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <title> Administrador - Kobat Shop</title>
+    <!-- Referencia de la hoja de estilo de Css -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/menu.css">
+    <link rel="stylesheet" href="../assets/css/utilities.css">
+    <link rel="stylesheet" href="../assets/css/footer.css">
+    <link rel="stylesheet" href="../assets/css/addProduct.css">
+
+</head>
+
+<body>
+    <main>
+        <section class="menu">
+            <header class="menu__header">
+                <a href="index.html">
+                    <button class="menu__beginning" id="boton">
+                        <img class="menu__logo" src="../assets/img/Logo.png" alt="Logo Kobat">
+                    </button>
+                </a>
+                <section class="menu__search">
+                    <input class="menu__text" type="search" placeholder="¿Que deseas buscar?">
+                    <button class="menu__boton" id="boton"><img class="menu__accion" src="../assets/img/VectorSearch.png"
+                            alt="Lupa de busqueda"></button>
+                </section>
+            </header>
+            <a href="login.html"><button class="menu__admin" id="boton">Menu Administrador</button></a>
+            <button class="menu__boton-sec" id="boton"><img class="menu__accion-sec" src="../assets/img/VectorSearchBlack.png" alt="Lupa de busqueda"></button>
+        </section>
+    
+        <form class="form add" action="#" data-form>
+            <div class="add__data">
+                <label for="" class="add__data_title">URL de Imagen</label>
+                <input type="text" class="add_data_text" required  data-image>
+                <span class="validation-error"></span>
+            </div>
+            <div class="add__data">
+                <label for="" class="add__data_title">Categoria</label>
+                <input type="text" class="add_data_text validar" required pattern="[\s\S]{1,20}" data-tipo="category" data-category>
+                <span class="validation-error"></span>
+            </div>
+            <div class="add__data">
+                <label for="" class="add__data_title">Nombre del producto</label>
+                <input type="text" class="add_data_text validar" required pattern="[\s\S]{1,20}" data-tipo="nameProduct" data-name>
+                <span class="validation-error"></span>
+            </div>
+            <div class="add__data">
+                <label for="" class="add__data_title">Precio del producto</label>
+                <input type="number" class="add_data_text validar" required data-tipo="price" data-price>
+                <span class="validation-error"></span>
+            </div>
+            <div class="add__description">
+                <label for="" class="add__description_title">Descripción del producto</label>
+                <textarea name="descripcion" class="add__description_text validar" cols="30" rows="3" required data-tipo="description" data-description></textarea>
+                <span class="validation-error"></span>
+            </div>
+            <button class="add_button" id="boton">Editar producto</button>
+        </form>
+    
+        <section class="utilities">
+            <div class="utilities__data">
+                <img class="utilities__logo" src="../assets/img/Logo.png" alt="Alura Geek">
+                <div class="utilities__info">
+                    <h2 class="utilities__info__text">Quienes somos</h2>
+                    <h2 class="utilities__info__text">Política de privacidad</h2>
+                    <h2 class="utilities__info__text">Programa de fidelidad</h2>
+                    <h2 class="utilities__info__text">Nuestras Tiendas</h2>
+                    <h2 class="utilities__info__text">Quiero ser franquiciado</h2>
+                    <h2 class="utilities__info__text">Anúncie aquí</h2>
+                </div>
+            </div>
+            <div class="utilities__contact">
+                <h2 class="utilities__contact__title">Hable con nosotros</h2>
+                <form class="form" action="#">
+                    <div class="utilities__contact__container">
+                        <input class="utilities__contact__name validar" type="text" placeholder="Nombre" required pattern="[\s\S]{1,40}" data-tipo="name">
+                        <span class="validation-error"></span>
+                    </div>
+                    <div class="utilities__contact__container">
+                        <textarea class="utilities__contact__message validar" cols="50" rows="5"
+                        placeholder="Escribe tu mensaje " required data-tipo="message"></textarea>
+                        <span class="validation-error"></span>
+                    </div>
+                    <button class="utilities__contact__send" id="boton">Enviar mensaje</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="foot">
+        <p class="foot__text">Desarrollado por Andres Dominguez</p>
+        <div class="foot__link">
+            <a href="https://www.linkedin.com/in/andres-dominguez-prog07/"><img class="foot__link__img"
+                    src="../assets/img/linkedin.png" alt="linkedin"></a>
+            <a href="https://github.com/AndyDom"><img class="foot__link__img" src="../assets/img/github.png" alt="github"></a>
+    
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js" integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="module" src="/controllers/app.js"></script>
+    <script type="module" src="/controllers/editProduct.js"></script>
+</body>
+
+</html>
